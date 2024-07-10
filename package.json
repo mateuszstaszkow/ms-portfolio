@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "lint": "next lint",
     "prettier": "prettier --write .",
     "start": "next start",
@@ -58,6 +59,7 @@
   "engines": {
     "node": "22.x"
   },
+  "homepage": "https://mateuszstaszkow.github.io/ms-portfolio",
   "resolutions": {
     "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"
   }
