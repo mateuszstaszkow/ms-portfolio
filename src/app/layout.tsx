@@ -15,9 +15,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const basePath = process.env.NODE_ENV === 'production' ? '/ms-portfolio' : '';
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href={`${basePath}/favicon.ico`} />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
