@@ -7,7 +7,7 @@ const LeftSidebar: React.FC = () => {
   return (
     <div className="left-sidebar">
       <Link href="/">
-        <img src={`${basePath}/logo.png`} alt="Logo" className="logo" />
+        <img src={`${basePath}/ms-logo.png`} alt="Logo" className="logo" />
       </Link>
     </div>
   );
