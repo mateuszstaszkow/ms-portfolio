@@ -6,6 +6,6 @@ module.exports = {
   reactStrictMode: true,
   output: 'export',
   assetPrefix: isProd ? '/ms-portfolio/' : '',
-  basePath: isProd ? '/ms-portfolio/' : '',
+  basePath: isProd ? '/ms-portfolio' : '',
   trailingSlash: true
 };
