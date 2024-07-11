@@ -3,30 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
-  --background-color-accent: linear-gradient(0deg, white, lightsteelblue 98%);
-  --background-color-base: white;
 
   --content-width: 70vw;
 
   --color-accent: rgb(210, 191, 183);
+  --color-primary: rgb(26, 49, 66);
+  --color-background-base: white;
+  --color-background-primary: lightsteelblue;
+  --color-background-accent: linear-gradient(0deg, var(--color-background-base), var(--color-background-primary) 98%);
 }
 
+/* TODO: implement dark theme */
 /*@media (prefers-color-scheme: dark) {*/
 /*  :root {*/
-/*    --foreground-rgb: 255, 255, 255;*/
+/*    --color-primary: rgb(255, 255, 255);*/
 /*    --background-start-rgb: 0, 0, 0;*/
 /*    --background-end-rgb: 0, 0, 0;*/
 /*  }*/
 /*}*/
 
 body {
-  background: var(--background-color-base);
-  background: var(--background-color-accent);
-  color: rgb(var(--foreground-rgb));
+  background: var(--color-background-base);
+  background: var(--color-background-accent);
+  color: rgb(var(--color-primary));
   font-family: 'Roboto', sans-serif;
 }
 
@@ -39,14 +40,13 @@ body {
 .global-container {
   background: conic-gradient(
       from 77deg at 0% 0%,
-      white 0%,
-      lightsteelblue 6%,
-      white 80%,
-      white 10%
+      var(--color-background-base) 0%,
+      var(--color-background-primary) 6%,
+      var(--color-background-base) 80%,
+      var(--color-background-base) 10%
     )
     no-repeat;
   background-size: 100vw 100vh;
-  /*color: rgb(210, 191, 183);*/
 }
 
 .content {
