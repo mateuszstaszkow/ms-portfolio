@@ -3,24 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --content-width: 70vw;
-
   --color-accent: rgb(210, 191, 183);
   --color-primary: rgb(26, 49, 66);
+  --color-hover: brown;
   --color-background-base: white;
   --color-background-primary: lightsteelblue;
   --color-background-accent: linear-gradient(0deg, var(--color-background-base), var(--color-background-primary) 98%);
+
+  --content-width: 70vw;
 }
 
 /* TODO: implement dark theme */
 /*@media (prefers-color-scheme: dark) {*/
 /*  :root {*/
 /*    --color-primary: rgb(255, 255, 255);*/
-/*    --background-start-rgb: 0, 0, 0;*/
-/*    --background-end-rgb: 0, 0, 0;*/
 /*  }*/
 /*}*/
 
@@ -51,7 +47,7 @@ body {
 
 .content {
   margin-left: calc((100vw - var(--content-width)) / 2);
-  width: calc(var(--content-width) - 15px);
+  width: var(--content-width);
 }
 
 main {

@@ -1,11 +1,11 @@
 .navigation-item {
   border-bottom: 1px solid var(--color-primary);
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.8vw;
   font-weight: bold;
   margin: 0 auto;
   padding: 0.75rem 0;
-  width: 130px;
+  width: 8vw;
 }
 
 .navigation-item:last-of-type {
@@ -13,14 +13,14 @@
 }
 
 .navigation-item:hover {
-  color: brown;
+  color: var(--color-hover);
 }
 
 .right-sidebar {
   background-color: transparent;
   border-left: 1px solid var(--color-background-base);
   height: 100%;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   position: fixed;
   right: 0;
   text-align: center;

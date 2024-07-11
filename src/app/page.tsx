@@ -1,6 +1,6 @@
 import LeftSidebar from '@/components/LeftSidebar/LeftSidebar';
 import RightSidebar from '@/components/RightSidebar/RightSidebar';
-import Header from '@/components/header';
+import Header from '@/components/Header/Header';
 import Section from '@/components/section';
 import AboutMe from '@/components/about-me';
 import Experience from '@/components/experience';

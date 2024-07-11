@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import './header.css';
+import '@/components/Header/Header.css';
 import AnimatedText from '@/components/AnimatedText/AnimatedText';
 import { Devices, PrecisionManufacturing, Science } from '@mui/icons-material';
 
