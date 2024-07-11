@@ -1,20 +1,21 @@
-import Image from 'next/image';
-import AboutMe from '@/app/components/about-me';
-import Section from '@/app/components/section';
-import Experience from '@/app/components/experience';
-import Education from '@/app/components/education';
-import Publications from '@/app/components/publications';
-import Services from '@/app/components/services';
-import ContactForm from '@/app/components/contact-form';
-import React from 'react';
-import Navbar from '@/app/components/navbar';
+import LeftSidebar from '@/components/LeftSidebar/LeftSidebar';
+import RightSidebar from '@/components/RightSidebar/RightSidebar';
+import Header from '@/components/header';
+import Section from '@/components/section';
+import AboutMe from '@/components/about-me';
+import Experience from '@/components/experience';
+import Education from '@/components/education';
+import Publications from '@/components/publications';
+import Services from '@/components/services';
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div>
+    <div className="global-container">
+      <LeftSidebar />
+      <RightSidebar />
+      <div className="content">
+        <main>
+          <Header />
           <Section id="about" title="O mnie">
             <AboutMe />
           </Section>
@@ -30,9 +31,8 @@ export default function Home() {
           <Section id="services" title="Usługi">
             <Services />
           </Section>
-          {/*<Section id="contact" title="Kontakt"><ContactForm/></Section>*/}
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
   );
 }

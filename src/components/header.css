@@ -1,0 +1,70 @@
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  50% {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+
+  50% {
+    opacity: 0;
+    scale: 0;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.header-container {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
+.skill-container {
+  border-top: 1px solid white;
+  height: 50vh;
+
+  .skill {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+
+    .icon {
+      font-size: 70px;
+    }
+
+    .skill-content {
+      animation: fadeIn 1s forwards;
+      opacity: 0;
+      text-align: center;
+    }
+  }
+
+  .skill:nth-of-type(2) .skill-content {
+    animation-delay: 1s;
+  }
+
+  .skill:nth-of-type(3) .skill-content {
+    animation-delay: 2s;
+  }
+}
