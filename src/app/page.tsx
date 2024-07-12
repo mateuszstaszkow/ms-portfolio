@@ -7,12 +7,14 @@ import Experience from '@/components/experience';
 import Education from '@/components/education';
 import Publications from '@/components/publications';
 import Services from '@/components/services';
+import MobileNav from '@/components/MobileNav/MobileNav';
 
 export default function Home() {
   return (
     <div className="global-container">
       <LeftSidebar />
       <RightSidebar />
+      <MobileNav />
       <div className="content">
         <main>
           <Header />

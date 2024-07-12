@@ -8,7 +8,11 @@
   --color-hover: brown;
   --color-background-base: white;
   --color-background-primary: lightsteelblue;
-  --color-background-accent: linear-gradient(0deg, var(--color-background-base), var(--color-background-primary) 98%);
+  --color-background-accent: linear-gradient(
+    0deg,
+    var(--color-background-base),
+    var(--color-background-primary) 98%
+  );
 
   --content-width: 70vw;
 }

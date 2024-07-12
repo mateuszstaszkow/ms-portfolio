@@ -11,14 +11,14 @@ const Header: React.FC = () => {
       <div className="header-container">
         <AnimatedText text="Mateusz Staszkow" />
       </div>
-      <div className="skill-container grid grid-cols-3">
+      <div className="skill-container grid grid-cols-1 lg:grid-cols-3 border-t-0 lg:border-t">
         <div className="skill">
           <div className="skill-content">
             <Devices className="icon" />
             <div>Full Stack Web Dev</div>
           </div>
         </div>
-        <div className="skill border-x">
+        <div className="skill border-x-0 lg:border-x">
           <div className="skill-content">
             <Science className="icon" />
             <div>AI & ML Publications</div>

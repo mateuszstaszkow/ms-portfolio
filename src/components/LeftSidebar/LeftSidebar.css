@@ -11,6 +11,14 @@
   width: calc((100vw - var(--content-width)) / 2);
 }
 
+@media (max-width: 1023px) {
+  .left-sidebar {
+    border: none;
+    padding: 2rem 0 0 1.5rem;
+    width: 100px;
+  }
+}
+
 .logo {
   height: 50px;
   width: 50px;
