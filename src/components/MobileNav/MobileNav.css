@@ -53,13 +53,12 @@
   background: white;
   width: 250px;
   height: 100%;
-  padding: 20px;
   position: relative;
   transform: translateX(100%);
 
-  .sidebar-content,
   .right-sidebar {
     display: block;
+    padding-top: 5rem;
   }
 }
 
