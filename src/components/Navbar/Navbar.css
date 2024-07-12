@@ -1,0 +1,33 @@
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.navbar {
+    .sidebar-content,
+    .mobile-nav {
+        transition: transform 0.3s ease-in-out;
+        transition-delay: 0.3s;
+    }
+}
+
+.navbar.navbar--hide {
+    .sidebar-content,
+    .mobile-nav {
+        transform: translateY(-200%);
+        transition-delay: 0.3s;
+    }
+}

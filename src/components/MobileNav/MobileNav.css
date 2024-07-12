@@ -57,6 +57,7 @@
   position: relative;
   transform: translateX(100%);
 
+  .sidebar-content,
   .right-sidebar {
     display: block;
   }
