@@ -36,8 +36,8 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = (props) => {
   }, []);
 
   return (
-    <div className={styles.section}>
-      <div className={styles.text}>
+    <div className={`${styles.section} flex-col-reverse lg:flex-row`}>
+      <div className="w-full lg:w-1/4 mb-8 mt-16 lg:mt-auto">
         <div>
           <div className="flex gap-2">
             <Flag code={props.countryCode} alt="Flag" className={styles.flag}/>
@@ -53,7 +53,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = (props) => {
         </div>
       </div>
       <div
-        className={`${styles.imageContainer} ${isVisible ? styles.visible : ''}`}
+        className={`${styles.imageContainer} ${isVisible ? styles.visible : ''} w-full lg:w-3/4`}
         ref={ref}
       >
         <a href={props.companyUrl} target="_blank">
