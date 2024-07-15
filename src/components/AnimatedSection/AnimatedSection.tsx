@@ -14,6 +14,8 @@ interface AnimatedSectionProps {
   isLeft?: boolean;
   role: string;
   technologies: string;
+  textWidth?: string; // Tailwind css
+  imageWidth?: string; // Tailwind css
 }
 
 const AnimatedSection: React.FC<AnimatedSectionProps> = (props) => {
@@ -38,10 +40,10 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = (props) => {
 
   return (
     <div className={`${styles.section} flex-col-reverse ${props.isLeft ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
-      <div className={`w-full lg:w-1/4 mb-8 mt-16 lg:mt-auto ${props.isLeft ? 'lg:ms-8' : ''}`}>
+      <div className={`w-full ${props.textWidth ? props.textWidth : 'lg:w-1/4'} mb-8 mt-16 lg:mt-auto ${props.isLeft ? 'lg:ms-8' : 'lg:me-8'}`}>
         <div>
           <div className="flex gap-2">
-            <Flag code={props.countryCode} alt="Flag" className={styles.flag}/>
+            <Flag code={props.countryCode} alt="Flag" className={`${props.countryCode === 'CH' ? 'w-6' : 'w-8'}`}/>
             <h2>{props.company}</h2>
           </div>
           <div className="text-gray-500 text-sm">{props.role?.toUpperCase()}</div>
@@ -54,7 +56,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = (props) => {
         </div>
       </div>
       <div
-        className={`${styles.imageContainer} ${isVisible ? styles.visible : ''} w-full lg:w-3/4`}
+        className={`${styles.imageContainer} ${isVisible ? styles.visible : ''} w-full ${props.textWidth ? props.imageWidth : 'lg:w-3/4'}`}
         ref={ref}
       >
         <a href={props.companyUrl} target="_blank">
