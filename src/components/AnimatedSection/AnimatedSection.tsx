@@ -10,9 +10,10 @@ interface AnimatedSectionProps {
   companyUrl: string;
   countryCode: string;
   description: string;
-  technologies: string;
   imageUrl: string;
+  isLeft?: boolean;
   role: string;
+  technologies: string;
 }
 
 const AnimatedSection: React.FC<AnimatedSectionProps> = (props) => {
@@ -36,8 +37,8 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = (props) => {
   }, []);
 
   return (
-    <div className={`${styles.section} flex-col-reverse lg:flex-row`}>
-      <div className="w-full lg:w-1/4 mb-8 mt-16 lg:mt-auto">
+    <div className={`${styles.section} flex-col-reverse ${props.isLeft ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
+      <div className={`w-full lg:w-1/4 mb-8 mt-16 lg:mt-auto ${props.isLeft ? 'lg:ms-8' : ''}`}>
         <div>
           <div className="flex gap-2">
             <Flag code={props.countryCode} alt="Flag" className={styles.flag}/>

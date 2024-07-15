@@ -11,7 +11,7 @@
   --color-background-accent: linear-gradient(
     0deg,
     var(--color-background-base),
-    var(--color-background-primary) 60%
+    var(--color-background-primary) 80%
   );
 
   --content-width: 70vw;
