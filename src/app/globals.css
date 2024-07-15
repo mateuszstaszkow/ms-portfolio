@@ -5,6 +5,7 @@
 :root {
   --color-accent: rgb(210, 191, 183);
   --color-primary: rgb(26, 49, 66);
+  --color-secondary: rgba(26, 49, 66, 0.25);
   --color-hover: brown;
   --color-background-base: white;
   --color-background-primary: lightsteelblue;

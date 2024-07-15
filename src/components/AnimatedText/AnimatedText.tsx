@@ -7,14 +7,16 @@ interface AnimatedTextProps {
   text: string;
   interval?: number;
   loopTime?: number;
+  initialPause?: number;
 }
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({
   text,
-  interval = 300,
-  loopTime = 10000
+  interval = 200,
+  loopTime = 10000,
+  initialPause = 1000
 }) => {
-  const [displayedText, setDisplayedText] = useState('');
+  const [displayedText, setDisplayedText] = useState(text);
 
   useEffect(() => {
     let index = 1;
@@ -27,22 +29,22 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
         setDisplayedText(() => text.substring(0, index));
         index++;
         if (index < text.length) {
-          animationFrameId = setTimeout(() => {
-            requestAnimationFrame(animate);
+          setTimeout(() => {
+            animationFrameId = requestAnimationFrame(animate);
           }, interval);
         }
       };
       animate();
     };
 
-    animateText();
+    setTimeout(() => animateText(), initialPause);
     const loopTimer = setInterval(animateText, loopTime);
 
     return () => {
       clearInterval(loopTimer);
       cancelAnimationFrame(animationFrameId);
     };
-  }, [text, interval, loopTime]);
+  }, [text, interval, loopTime, initialPause]);
 
   return <div className="animated-text">{displayedText}</div>;
 };

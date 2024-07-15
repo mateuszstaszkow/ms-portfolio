@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     let lastScrollY = window.scrollY;
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
+      if ((window.scrollY > 0) && (window.scrollY > lastScrollY)) {
         setShowPanels(false);
       } else {
         setShowPanels(true);
