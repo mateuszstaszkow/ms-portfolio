@@ -3,16 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --color-accent: rgb(210, 191, 183);
+  --color-accent: brown;
   --color-primary: rgb(26, 49, 66);
   --color-secondary: rgba(26, 49, 66, 0.25);
-  --color-hover: brown;
   --color-background-base: white;
   --color-background-primary: lightsteelblue;
   --color-background-accent: linear-gradient(
     0deg,
     var(--color-background-base),
-    var(--color-background-primary) 98%
+    var(--color-background-primary) 60%
   );
 
   --content-width: 70vw;
@@ -55,6 +54,15 @@ body {
   width: var(--content-width);
 }
 
+h2 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
 main {
   margin-bottom: 40px;
+}
+
+.text-accent {
+  color: var(--color-accent);
 }

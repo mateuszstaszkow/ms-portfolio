@@ -1,0 +1,34 @@
+/* src/styles/Section.module.css */
+.flag {
+    width: 1.5vw;
+}
+
+.imageContainer {
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out;
+}
+
+.imageContainer.visible .image {
+    transform: translateX(0);
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.text {
+    margin: auto 0 2rem 0;
+    width: 30%;
+}

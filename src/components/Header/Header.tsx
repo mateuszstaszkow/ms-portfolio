@@ -39,7 +39,7 @@ const Header: React.FC = () => {
         <div className="skill">
           <div className="skill-content">
             <PrecisionManufacturing className="icon"/>
-            <div>IoT & Robots</div>
+            <div>IoT & Robotics</div>
             <div className="skill__description hidden lg:block">
               <div>C | C++ | Assembler</div>
               <div>Arduino | AVR | STM32</div>

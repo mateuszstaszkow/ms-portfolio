@@ -19,8 +19,8 @@
 .navbar {
     .sidebar-content,
     .mobile-nav {
-        transition: transform 0.3s ease-in-out;
-        transition-delay: 0.3s;
+        transition: transform 0.5s ease-in-out;
+        transition-delay: 0.5s;
     }
 }
 
@@ -28,6 +28,6 @@
     .sidebar-content,
     .mobile-nav {
         transform: translateY(-200%);
-        transition-delay: 0.3s;
+        transition-delay: 0.5s;
     }
 }
