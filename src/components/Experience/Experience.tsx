@@ -41,6 +41,18 @@ const Experience: React.FC = () => {
           textWidth="lg:w-1/3"
         ></AnimatedSection>
       </Section>
+      <Section id="aramco">
+        <AnimatedSection
+          company="Aramco"
+          companyUrl="https://www.ithra.com/en"
+          countryCode="SA"
+          description="Team management, software development and architecture design of the frontend project for the educational platform in the Middle East."
+          imageUrl="/aramco.png"
+          isLeft={true}
+          role="Team Lead of the frontend project"
+          technologies="Angular | Team Lead | Architect | Kanban"
+        ></AnimatedSection>
+      </Section>
     </>
   );
 };
