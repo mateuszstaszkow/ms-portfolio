@@ -19,7 +19,7 @@ const Experience: React.FC = () => {
       <Section id="mobiliar">
         <AnimatedSection
           company="die Mobiliar"
-          companyUrl="https://mobiliar.ch/"
+          companyUrl="https://www.mobiliar.ch/privatpersonen/sparen-und-vorsorgen/todesfallversicherung"
           countryCode="CH"
           description="Exclusive full stack responsibility for several applications from the life insurances project portfolio of the great Swiss insurance company in the Vaud office."
           imageUrl="mobiliar.jpg"
@@ -78,6 +78,19 @@ const Experience: React.FC = () => {
           textWidth="lg:w-2/5"
         ></AnimatedSection>
       </Section>
+      <Section id="msd">
+        <AnimatedSection
+          company="MSD Apartments"
+          companyUrl="https://www.youtube.com/watch?v=JiDVGROMxqQ"
+          countryCode="PL"
+          description="Founder, CEO, Marketing, Customer Relations, Team Management, Frontend development for the company for the long and short term apartment rentals by the Polish sea in Koszalin."
+          imageUrl="msd.jpg"
+          imageWidth="lg:w-3/5"
+          role="Founder"
+          technologies="React | Team Management | Customer Relations"
+          textWidth="lg:w-2/5"
+        ></AnimatedSection>
+      </Section>
       <Section id="ge">
         <AnimatedSection
           company="General Electric"
@@ -86,6 +99,7 @@ const Experience: React.FC = () => {
           description="Frontend development of the desktop app for the Aviation Lab in the Institute of Aviation in Warsaw."
           imageUrl="ge.webp"
           imageWidth="lg:w-3/5"
+          isLeft={true}
           role="Aviation Lab internship"
           technologies="C++ | Qt | Electronics"
           textWidth="lg:w-2/5"
