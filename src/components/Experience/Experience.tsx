@@ -21,7 +21,7 @@ const Experience: React.FC = () => {
           company="die Mobiliar"
           companyUrl="https://mobiliar.ch/"
           countryCode="CH"
-          description="Exclusive full stack responsibility for several applications from the project portfolio of the great Swiss Insurance Company in the Vaud office."
+          description="Exclusive full stack responsibility for several applications from the life insurances project portfolio of the great Swiss insurance company in the Vaud office."
           imageUrl="mobiliar.jpg"
           isLeft={true}
           role="Project portfolio full stack development"
@@ -33,12 +33,24 @@ const Experience: React.FC = () => {
           company="Ernst & Young"
           companyUrl="https://www.ey.com/en_uk"
           countryCode="GB"
-          description="Full stack development in the big organized teams for internal automatization platforms for London offices. Tech lead & architecture trainings."
+          description="Full stack development in the big organized teams for internal automatization platforms for London offices. Develop architectural framework for the whole Software Engineering department."
           imageWidth="lg:w-2/3"
           imageUrl="ey-uk.png"
-          role="SCRUM full stack development"
+          role="SCRUM full stack development, Tech Lead & Architect trainings."
           technologies="Angular | Spring | SCRUM | Team Leading"
           textWidth="lg:w-1/3"
+        ></AnimatedSection>
+      </Section>
+      <Section id="samsung">
+        <AnimatedSection
+          company="Samsung"
+          companyUrl="https://samsungrd.pl/en"
+          countryCode="KR"
+          description="Full stack development of the smart code quality platform for smartphones in cooperation with Suwon office in South Korea. System won the Samsung Best R&D Project."
+          imageUrl="samsung.png"
+          isLeft={true}
+          role="Best R&D Project full stack development"
+          technologies="Angular | Spring | SCRUM"
         ></AnimatedSection>
       </Section>
       <Section id="aramco">
@@ -48,7 +60,6 @@ const Experience: React.FC = () => {
           countryCode="SA"
           description="Team management, software development and architecture design of the frontend project for the educational platform in the Middle East."
           imageUrl="aramco.png"
-          isLeft={true}
           role="Team Lead of the frontend project"
           technologies="Angular | Team Lead | Architect | Kanban"
         ></AnimatedSection>
