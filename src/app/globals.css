@@ -59,6 +59,13 @@ h2 {
   font-weight: bold;
 }
 
+.header-container {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
 main {
   margin-bottom: 40px;
 }

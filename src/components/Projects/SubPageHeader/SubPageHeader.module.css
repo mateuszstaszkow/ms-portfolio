@@ -1,0 +1,42 @@
+/* TODO: refactor with SCSS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    50% {
+        opacity: 0;
+        scale: 0;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.headerContainer__subpage {
+    height: 40vh;
+}
+
+.iconDown {
+    animation: fadeIn 1s forwards;
+    color: var(--color-secondary);
+    margin: 0 auto 5vh auto;
+    opacity: 0;
+}
+
+.iconDown__icon {
+    font-size: 3rem;
+}
+
+.iconDown:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.iconDown:nth-of-type(4) {
+    animation-delay: 2s;
+}
+
+

@@ -12,7 +12,9 @@ const RightSidebar: React.FC = () => {
         <a href="/mateusz-staszkow-cv.pdf" target="_blank" className="navigation-item">
           RESUME
         </a>
-        <div className="navigation-item">PROJECTS</div>
+        <Link className="navigation-item" href="/projects">
+          PROJECTS
+        </Link>
         <div className="navigation-item">CERTIFICATES</div>
         <div className="navigation-item">PUBLICATIONS</div>
         <div className="navigation-item">INTERVIEWS</div>

@@ -1,8 +1,10 @@
+import LayoutTransition from "@/components/LayoutTransition/LayoutTransition";
 import React from 'react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,8 +30,13 @@ export default function RootLayout({
         <title>Mateusz Staszkow Portfolio</title>
       </head>
       <body className={inter.className}>
-        {children}
-        <Footer />
+      <div className="global-container">
+        <Navbar/>
+        <div className="content">
+          <LayoutTransition>{children}</LayoutTransition>
+        </div>
+      </div>
+      <Footer/>
       </body>
     </html>
   );
