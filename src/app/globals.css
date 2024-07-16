@@ -54,6 +54,14 @@ body {
   width: var(--content-width);
 }
 
+@media (max-width: 1023px) {
+  .content {
+    margin-left: 0;
+    padding: 0 1rem;
+    width: 100%;
+  }
+}
+
 h2 {
   font-size: 2rem;
   font-weight: bold;

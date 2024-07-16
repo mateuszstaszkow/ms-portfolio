@@ -4,12 +4,17 @@ import AnimatedText from "@/components/AnimatedText/AnimatedText";
 import { ArrowDownward } from "@mui/icons-material";
 import styles from './SubPageHeader.module.css';
 
-const SubPageHeader: React.FC = () => {
+interface SubPageHeaderProps {
+  id: string;
+  title: string;
+}
+
+const SubPageHeader: React.FC<SubPageHeaderProps> = ({ id, title}) => {
   return (
-    <Section id="projects">
+    <Section id={ id }>
       <div className="w-full text-center">
         <div className={`header-container ${styles.headerContainer__subpage}`}>
-          <AnimatedText text="Projects"/>
+          <AnimatedText text={ title }/>
         </div>
         <div className={`${styles.iconDown}`}>
           <ArrowDownward className={styles.iconDown__icon}></ArrowDownward>
