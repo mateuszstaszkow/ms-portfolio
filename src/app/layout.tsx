@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,8 +25,12 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
         />
+        <title>Mateusz Staszkow Portfolio</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
