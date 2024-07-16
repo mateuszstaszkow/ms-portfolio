@@ -37,7 +37,7 @@ const Experience: React.FC = () => {
           imageWidth="lg:w-2/3"
           imageUrl="ey-uk.png"
           role="SCRUM full stack development, Tech Lead & Architect trainings."
-          technologies="Angular | Spring | SCRUM | Team Leading"
+          technologies="Angular | Spring | Nest | SCRUM | Team Leading"
           textWidth="lg:w-1/3"
         ></AnimatedSection>
       </Section>
@@ -50,7 +50,7 @@ const Experience: React.FC = () => {
           imageUrl="samsung.png"
           isLeft={true}
           role="Best R&D Project full stack development"
-          technologies="Angular | Spring | SCRUM"
+          technologies="Angular | Vue | Spring | SCRUM"
         ></AnimatedSection>
       </Section>
       <Section id="aramco">
@@ -62,6 +62,33 @@ const Experience: React.FC = () => {
           imageUrl="aramco.png"
           role="Team Lead of the frontend project"
           technologies="Angular | Team Lead | Architect | Kanban"
+        ></AnimatedSection>
+      </Section>
+      <Section id="proservice">
+        <AnimatedSection
+          company="ProService Finteco"
+          companyUrl="https://psfinteco.com/en/"
+          countryCode="PL"
+          description="Core system refactor with Business Process Modelling tools and SCRUM for the great stock transfer agent in Poland."
+          imageUrl="proservice.png"
+          imageWidth="lg:w-3/5"
+          isLeft={true}
+          role="1 man army frontend development"
+          technologies="Angular | BPM | SCRUM"
+          textWidth="lg:w-2/5"
+        ></AnimatedSection>
+      </Section>
+      <Section id="ge">
+        <AnimatedSection
+          company="General Electric"
+          companyUrl="https://ilot.lukasiewicz.gov.pl/en/"
+          countryCode="PL"
+          description="Frontend development of the desktop app for the Aviation Lab in the Institute of Aviation in Warsaw."
+          imageUrl="ge.webp"
+          imageWidth="lg:w-3/5"
+          role="Aviation Lab internship"
+          technologies="C++ | Qt | Electronics"
+          textWidth="lg:w-2/5"
         ></AnimatedSection>
       </Section>
     </>
