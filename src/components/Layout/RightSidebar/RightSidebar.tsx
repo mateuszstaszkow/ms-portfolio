@@ -1,6 +1,7 @@
 import React from 'react';
 import './RightSidebar.css';
 import Link from 'next/link';
+import ContactOptions from "@/components/shared/ContactOptions/ContactOptions";
 
 const RightSidebar: React.FC = () => {
   return (
@@ -15,17 +16,24 @@ const RightSidebar: React.FC = () => {
         <Link className="navigation-item" href="/projects">
           PROJECTS
         </Link>
-        <div className="navigation-item">CERTIFICATES</div>
+        <Link className="navigation-item" href="/certificates">
+          CERTIFICATES
+        </Link>
         <Link className="navigation-item" href="/publications">
           PUBLICATIONS
         </Link>
-        <div className="navigation-item">INTERVIEWS</div>
+        <a href="https://justjoin.it/blog/kultura-pracy-w-szwajcarii-jest-zroznicowana/" target="_blank" className="navigation-item">
+          INTERVIEWS
+        </a>
         <a href="https://www.youtube.com/watch?v=JiDVGROMxqQ" target="_blank" className="navigation-item">
           MSD APARTMENTS
         </a>
         {/*TODO*/}
         {/*<div className="navigation-item">ABOUT</div>*/}
-        {/*<div className="navigation-item">CONTACT</div>*/}
+        {/*<div className="navigation-item">REFERENCES</div>*/}
+        <div className="navigation-item contact-options pt-4">
+          <ContactOptions></ContactOptions>
+        </div>
       </div>
     </div>
   );

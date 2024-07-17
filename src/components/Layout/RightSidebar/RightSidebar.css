@@ -13,7 +13,11 @@
   border-bottom: none;
 }
 
-.navigation-item:hover {
+.navigation-item.contact-options {
+  padding-top: 1rem;
+}
+
+.navigation-item:hover:not(.contact-options) {
   color: var(--color-accent);
 }
 

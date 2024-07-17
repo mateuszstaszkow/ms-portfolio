@@ -1,17 +1,15 @@
 import React from "react";
 import { Project } from "@/components/Projects/model/projects.interface";
 import SubPageHeader from "@/components/shared/SubPageHeader/SubPageHeader";
-import { PROJECTS } from "@/data/projects";
+import { CERTIFICATES } from "@/data/certificates";
 import ProjectGrid from "@/components/Projects/ProjectGrid/ProjectGrid";
 
 const Certificates: React.FC = () => {
-  const projects: Project[] = [...PROJECTS]
-    .reverse()
-    .filter(project => project.isPublication);
+  const projects: Project[] = [...CERTIFICATES].reverse();
 
   return (
     <div>
-      <SubPageHeader id="publications" title="Publications"></SubPageHeader>
+      <SubPageHeader id="certificates" title="Certificates"></SubPageHeader>
       <ProjectGrid projects={projects}></ProjectGrid>
     </div>
   );

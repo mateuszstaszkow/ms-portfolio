@@ -6,13 +6,3 @@
     flex-direction: column;
     align-items: center;
 }
-
-.socialIcons {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.icon {
-    font-size: 1.5rem;
-}

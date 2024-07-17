@@ -1,0 +1,10 @@
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
