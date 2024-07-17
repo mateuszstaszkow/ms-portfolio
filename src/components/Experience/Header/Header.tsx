@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import '@/components/Header/Header.css';
-import AnimatedText from '@/components/AnimatedText/AnimatedText';
+import './Header.css';
+import AnimatedText from '@/components/shared/AnimatedText/AnimatedText';
 import { Devices, PrecisionManufacturing, Science } from '@mui/icons-material';
 
 const Header: React.FC = () => {

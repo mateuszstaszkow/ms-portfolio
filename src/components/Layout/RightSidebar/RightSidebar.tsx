@@ -23,8 +23,9 @@ const RightSidebar: React.FC = () => {
         <a href="https://www.youtube.com/watch?v=JiDVGROMxqQ" target="_blank" className="navigation-item">
           MSD APARTMENTS
         </a>
-        <div className="navigation-item">ABOUT</div>
-        <div className="navigation-item">CONTACT</div>
+        {/*TODO*/}
+        {/*<div className="navigation-item">ABOUT</div>*/}
+        {/*<div className="navigation-item">CONTACT</div>*/}
       </div>
     </div>
   );

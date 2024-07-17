@@ -1,6 +1,6 @@
 import React from "react";
-import Section from "@/components/Section/Section";
-import AnimatedText from "@/components/AnimatedText/AnimatedText";
+import Section from "@/components/shared/Section/Section";
+import AnimatedText from "@/components/shared/AnimatedText/AnimatedText";
 import { ArrowDownward } from "@mui/icons-material";
 import styles from './SubPageHeader.module.css';
 

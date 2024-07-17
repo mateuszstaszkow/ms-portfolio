@@ -1,6 +1,6 @@
 import React from 'react';
-import AnimatedSection from '@/components/AnimatedSection/AnimatedSection';
-import Section from "@/components/Section/Section";
+import AnimatedSection from '@/components/shared/AnimatedSection/AnimatedSection';
+import Section from "@/components/shared/Section/Section";
 
 const Experience: React.FC = () => {
   return (

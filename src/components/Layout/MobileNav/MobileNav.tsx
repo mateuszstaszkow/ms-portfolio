@@ -1,6 +1,6 @@
 'use client';
 
-import RightSidebar from '@/components/RightSidebar/RightSidebar';
+import RightSidebar from '@/components/Layout/RightSidebar/RightSidebar';
 import React, { useState } from 'react';
 import './MobileNav.css';
 import { Close, Menu } from '@mui/icons-material';

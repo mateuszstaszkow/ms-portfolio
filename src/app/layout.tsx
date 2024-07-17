@@ -1,10 +1,10 @@
-import LayoutTransition from "@/components/LayoutTransition/LayoutTransition";
+import LayoutTransition from "@/components/shared/LayoutTransition/LayoutTransition";
 import React from 'react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Layout/Footer/Footer";
+import Navbar from "@/components/Layout/Navbar/Navbar";
 
 const inter = Inter({ subsets: ['latin'] });
 

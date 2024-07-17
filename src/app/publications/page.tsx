@@ -1,7 +1,7 @@
 import React from "react";
 import { Project } from "@/components/Projects/model/projects.interface";
-import SubPageHeader from "@/components/SubPageHeader/SubPageHeader";
-import Section from "@/components/Section/Section";
+import SubPageHeader from "@/components/shared/SubPageHeader/SubPageHeader";
+import Section from "@/components/shared/Section/Section";
 import styles from "@/app/projects/projects.module.css";
 import ProjectTile from "@/components/Projects/ProjectTile/ProjectTile";
 import { PROJECTS } from "@/data/projects";

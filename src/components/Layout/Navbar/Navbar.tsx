@@ -1,10 +1,9 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import '@/components/Header/Header.css';
-import LeftSidebar from '@/components/LeftSidebar/LeftSidebar';
-import RightSidebar from '@/components/RightSidebar/RightSidebar';
-import MobileNav from '@/components/MobileNav/MobileNav';
+import LeftSidebar from '@/components/Layout/LeftSidebar/LeftSidebar';
+import RightSidebar from '@/components/Layout/RightSidebar/RightSidebar';
+import MobileNav from '@/components/Layout/MobileNav/MobileNav';
 
 import './Navbar.css';
 
