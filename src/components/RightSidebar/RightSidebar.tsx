@@ -16,7 +16,9 @@ const RightSidebar: React.FC = () => {
           PROJECTS
         </Link>
         <div className="navigation-item">CERTIFICATES</div>
-        <div className="navigation-item">PUBLICATIONS</div>
+        <Link className="navigation-item" href="/publications">
+          PUBLICATIONS
+        </Link>
         <div className="navigation-item">INTERVIEWS</div>
         <a href="https://www.youtube.com/watch?v=JiDVGROMxqQ" target="_blank" className="navigation-item">
           MSD APARTMENTS

@@ -1,17 +1,19 @@
 import React from "react";
-import Section from "@/components/Section/Section";
-import SubPageHeader from "@/components/SubPageHeader/SubPageHeader";
-import ProjectTile from "@/components/Projects/ProjectTile/ProjectTile";
-import styles from "@/app/projects/projects.module.css";
 import { Project } from "@/components/Projects/model/projects.interface";
+import SubPageHeader from "@/components/SubPageHeader/SubPageHeader";
+import Section from "@/components/Section/Section";
+import styles from "@/app/projects/projects.module.css";
+import ProjectTile from "@/components/Projects/ProjectTile/ProjectTile";
 import { PROJECTS } from "@/data/projects";
 
-const Projects: React.FC = () => {
-  const projects: Project[] = [...PROJECTS].reverse();
+const Certificates: React.FC = () => {
+  const projects: Project[] = [...PROJECTS]
+    .reverse()
+    .filter(project => project.isPublication);
 
   return (
     <div>
-      <SubPageHeader id="projects" title="Projects"></SubPageHeader>
+      <SubPageHeader id="publications" title="Publications"></SubPageHeader>
       <Section id="summary">
         <div className={styles.projectsPage}>
           <div className={styles.projectsGrid}>
@@ -23,4 +25,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export default Certificates;
