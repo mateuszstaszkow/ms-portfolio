@@ -6,13 +6,17 @@
   --color-accent: brown;
   --color-primary: rgb(26, 49, 66);
   --color-secondary: rgba(26, 49, 66, 0.25);
+  --color-important: rgb(210, 191, 183);
   --color-background-base: white;
+  --color-background-light: #eee;
   --color-background-primary: lightsteelblue;
+  --color-background-important: rgb(255, 242, 232);
   --color-background-accent: linear-gradient(
     0deg,
     var(--color-background-base),
     var(--color-background-primary) 90%
   );
+  --color-border: #e0e0e0;
 
   --content-width: 70vw;
 }

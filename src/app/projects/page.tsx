@@ -1,15 +1,24 @@
 import React from "react";
-import SubPageHeader from "@/components/Projects/SubPageHeader/SubPageHeader";
 import Section from "@/components/Section/Section";
+import SubPageHeader from "@/components/SubPageHeader/SubPageHeader";
+import ProjectTile from "@/components/Projects/ProjectTile/ProjectTile";
+import styles from "@/app/projects/projects.module.css";
+import { Project, PROJECTS } from "@/components/Projects/model/projects.interface";
 
 const Projects: React.FC = () => {
+  const projects: Project[] = [...PROJECTS].reverse();
+
   return (
-    <main>
+    <div>
       <SubPageHeader id="projects" title="Projects"></SubPageHeader>
       <Section id="summary">
-        <div>pictures</div>
+        <div className={styles.projectsPage}>
+          <div className={styles.projectsGrid}>
+            {projects.map((project, index) => (<ProjectTile key={index} project={project} />))}
+          </div>
+        </div>
       </Section>
-    </main>
+    </div>
   );
 };
 

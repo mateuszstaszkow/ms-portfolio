@@ -11,7 +11,7 @@ const Section: React.FC<SectionProps> = ({ id, children}) => {
       id={id}
       className="min-h-screen flex flex-col justify-center items-center p-0 lg:p-10"
     >
-      <div>{children}</div>
+      <div className="w-full">{children}</div>
     </section>
   );
 };
