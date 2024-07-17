@@ -2,6 +2,7 @@ import React from 'react';
 import './RightSidebar.css';
 import Link from 'next/link';
 import ContactOptions from "@/components/shared/ContactOptions/ContactOptions";
+import { BASE_PATH } from "@/components/shared/utils/basePath";
 
 const RightSidebar: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const RightSidebar: React.FC = () => {
         <Link className="navigation-item" href="/">
           EXPERIENCE
         </Link>
-        <a href="mateusz-staszkow-cv.pdf" target="_blank" className="navigation-item">
+        <a href={`${BASE_PATH}/mateusz-staszkow-cv.pdf`} target="_blank" className="navigation-item">
           RESUME
         </a>
         <Link className="navigation-item" href="/projects">
