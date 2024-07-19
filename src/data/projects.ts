@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Desktop application for Sourcing-Measurement Unit",
-    place: "EDC",
+    place: "General Electric",
     teamCount: 4,
     dates: "07/2016 – 09/2016",
     technologies: "C++, Qt, SCPI, GIT",

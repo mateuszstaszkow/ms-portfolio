@@ -15,6 +15,7 @@ const ProjectTile: React.FC<{ project: Project }> = ({ project }) => {
         {project.teamCount ? `${project.teamCount} participants` : '1 participant'}
       </div>
       <div>{project.dates}</div>
+      <div className="text-sm text-gray-500">{project.monthsDifference ? `(${project.monthsDifference})` : ''}</div>
       <div className="mt-2 text-gray-500">{project.technologies}</div>
     </div>
   );

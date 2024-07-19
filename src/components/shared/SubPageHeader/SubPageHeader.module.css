@@ -39,4 +39,6 @@
     animation-delay: 2s;
 }
 
-
+.labelText {
+    font-size: 1.5rem;
+}

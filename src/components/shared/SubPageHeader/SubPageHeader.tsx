@@ -7,9 +7,10 @@ import styles from './SubPageHeader.module.css';
 interface SubPageHeaderProps {
   id: string;
   title: string;
+  label: string;
 }
 
-const SubPageHeader: React.FC<SubPageHeaderProps> = ({ id, title}) => {
+const SubPageHeader: React.FC<SubPageHeaderProps> = ({ id, title, label}) => {
   return (
     <Section id={ id }>
       <div className="w-full text-center">
@@ -19,8 +20,8 @@ const SubPageHeader: React.FC<SubPageHeaderProps> = ({ id, title}) => {
         <div className={`${styles.iconDown}`}>
           <ArrowDownward className={styles.iconDown__icon}></ArrowDownward>
         </div>
-        <div className={`${styles.iconDown}`}>
-          <ArrowDownward className={styles.iconDown__icon}></ArrowDownward>
+        <div className={`${styles.iconDown} ${styles.labelText}`}>
+          { label }
         </div>
         <div className={`${styles.iconDown}`}>
           <ArrowDownward className={styles.iconDown__icon}></ArrowDownward>

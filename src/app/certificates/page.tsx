@@ -9,7 +9,8 @@ const Certificates: React.FC = () => {
 
   return (
     <div>
-      <SubPageHeader id="certificates" title="Certificates"></SubPageHeader>
+      <SubPageHeader id="certificates" title="Certificates" label={`${projects.length} certificates`}>
+      </SubPageHeader>
       <ProjectGrid projects={projects}></ProjectGrid>
     </div>
   );
