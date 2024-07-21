@@ -21,7 +21,7 @@
 }
 
 .iconDown {
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 0.5s forwards;
     color: var(--color-secondary);
     margin: 0 auto 5vh auto;
     opacity: 0;
@@ -32,11 +32,11 @@
 }
 
 .iconDown:nth-of-type(3) {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 .iconDown:nth-of-type(4) {
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .labelText {

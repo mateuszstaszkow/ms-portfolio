@@ -7,5 +7,6 @@ export interface Project {
   important?: boolean;
   countryCode?: string;
   isPublication?: boolean;
+  isCertificate?: boolean;
   monthsDifference?: string;
 }
