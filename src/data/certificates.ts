@@ -52,5 +52,14 @@ export const CERTIFICATES: Project[] = [
     countryCode: 'US',
     isCertificate: true,
     url: 'https://www.hackerrank.com/certificates/feb492a8baf8'
+  },
+  {
+    title: 'CSS (Basic)',
+    place: 'HackerRank, Online',
+    dates: '07/2024',
+    technologies: 'SQL',
+    countryCode: 'US',
+    isCertificate: true,
+    url: 'https://www.hackerrank.com/certificates/91d8faafdb12'
   }
 ];
