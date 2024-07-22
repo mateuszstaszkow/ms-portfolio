@@ -9,4 +9,5 @@ export interface Project {
   isPublication?: boolean;
   isCertificate?: boolean;
   monthsDifference?: string;
+  url?: string;
 }

@@ -23,7 +23,8 @@ export const CERTIFICATES: Project[] = [
     dates: '07/2024',
     technologies: 'Angular, TypeScript',
     countryCode: 'US',
-    isCertificate: true
+    isCertificate: true,
+    url: 'https://www.hackerrank.com/certificates/efc2421290ab'
   },
   {
     title: 'Angular (Intermediate)',
@@ -31,7 +32,17 @@ export const CERTIFICATES: Project[] = [
     dates: '07/2024',
     technologies: 'Angular, TypeScript',
     countryCode: 'US',
-    isCertificate: true
+    isCertificate: true,
+    url: 'https://www.hackerrank.com/certificates/886a92155a33'
+  },
+  {
+    title: 'JavaScript (Basic)',
+    place: 'HackerRank, Online',
+    dates: '07/2024',
+    technologies: 'JavaScript, node.js',
+    countryCode: 'US',
+    isCertificate: true,
+    url: 'https://www.hackerrank.com/certificates/eee4b9f306a4'
   },
   {
     title: 'SQL (Basic)',
@@ -39,6 +50,7 @@ export const CERTIFICATES: Project[] = [
     dates: '07/2024',
     technologies: 'SQL',
     countryCode: 'US',
-    isCertificate: true
+    isCertificate: true,
+    url: 'https://www.hackerrank.com/certificates/feb492a8baf8'
   }
 ];
