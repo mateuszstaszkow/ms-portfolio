@@ -5,7 +5,12 @@ import Flag from 'react-world-flags';
 
 const ProjectTile: React.FC<{ project: Project }> = ({ project }) => {
   return (
-    <a href={project.url} target="_blank" rel="noopener noreferrer">
+    <a
+      className="h-full"
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div
         className={`${styles.projectTile} ${project.important ? styles.projectTileImportant : ''}`}
       >

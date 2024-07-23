@@ -1,8 +1,11 @@
+'use client';
+
 import React from 'react';
 import SubPageHeader from '@/components/shared/SubPageHeader/SubPageHeader';
 import { Project } from '@/components/Projects/model/projects.interface';
 import { PROJECTS } from '@/data/projects';
 import ProjectGrid from '@/components/Projects/ProjectGrid/ProjectGrid';
+import styles from './projects.module.css';
 
 const AVERAGE_DAYS_IN_MONTH: number = 30.437;
 const MILLISECONDS_IN_MONTH: number = 1000 * 3600 * 24 * AVERAGE_DAYS_IN_MONTH;
@@ -45,14 +48,36 @@ const Projects: React.FC = () => {
       monthsDifference: getMonthsDifference(project)
     }));
 
+  const [searchTerm, setSearchTerm] = React.useState('');
+  const [filteredProjects, setFilteredProjects] =
+    React.useState<Project[]>(projects);
+
+  const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const term = event.target.value;
+    setSearchTerm(term);
+    const filtered = projects.filter((project) =>
+      project.technologies.toLowerCase().includes(term.toLowerCase())
+    );
+    setFilteredProjects(filtered);
+  };
+
   return (
-    <div>
+    <div className="text-center">
       <SubPageHeader
         id="projects"
         title="Projects"
         label={`${projects.length} commercial & private projects`}
       ></SubPageHeader>
-      <ProjectGrid projects={projects}></ProjectGrid>
+      <div className={styles.searchBarContainer}>
+        <input
+          className={styles.searchBar}
+          type="text"
+          placeholder="Search skill..."
+          value={searchTerm}
+          onChange={handleSearch}
+        />
+      </div>
+      <ProjectGrid projects={filteredProjects}></ProjectGrid>
     </div>
   );
 };

@@ -2,9 +2,10 @@
     background-color: var(--color-background-light);
     border: 1px solid var(--color-border);
     border-radius: 8px;
-    cursor: pointer;
-    padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    height: 100%;
+    padding: 1.5rem;
     text-align: center;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
