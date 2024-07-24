@@ -61,5 +61,14 @@ export const CERTIFICATES: Project[] = [
     countryCode: 'US',
     isCertificate: true,
     url: 'https://www.hackerrank.com/certificates/91d8faafdb12'
+  },
+  {
+    title: 'Java (Basic)',
+    place: 'HackerRank, Online',
+    dates: '07/2024',
+    technologies: 'Java',
+    countryCode: 'US',
+    isCertificate: true,
+    url: 'https://www.hackerrank.com/certificates/bfe7eda08ff5'
   }
 ];
