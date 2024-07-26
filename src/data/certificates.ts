@@ -70,5 +70,14 @@ export const CERTIFICATES: Project[] = [
     countryCode: 'US',
     isCertificate: true,
     url: 'https://www.hackerrank.com/certificates/bfe7eda08ff5'
+  },
+  {
+    title: 'Problem Solving (Basic)',
+    place: 'HackerRank, Online',
+    dates: '07/2024',
+    technologies: 'Javascript',
+    countryCode: 'US',
+    isCertificate: true,
+    url: 'https://www.hackerrank.com/certificates/6df087047ae0'
   }
 ];
