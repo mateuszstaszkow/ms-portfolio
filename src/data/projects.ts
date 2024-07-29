@@ -315,7 +315,8 @@ export const PROJECTS: Project[] = [
     dates: '05/2022 – 06/2022',
     technologies: 'Python, Pandas, scikit-learn, numpy, matplotlib',
     countryCode: 'FR',
-    isPublication: true
+    isPublication: true,
+    url: 'https://aclanthology.org/2022.politicalnlp-1.12/'
   },
   {
     title:
@@ -326,7 +327,8 @@ export const PROJECTS: Project[] = [
     technologies: 'Python, Pandas, scikit-learn, numpy, matplotlib',
     important: true,
     countryCode: 'PL',
-    isPublication: true
+    isPublication: true,
+    url: 'https://drive.google.com/file/d/1q9MWdJmONLrdkwClbHsho2vSxPGJtbCU/view?usp=sharing'
   },
   {
     title: 'Can LLMs Determine Political Leaning of Polish News Articles?',
@@ -336,7 +338,8 @@ export const PROJECTS: Project[] = [
     technologies: 'Python, Pandas, scikit-learn, numpy, matplotlib',
     important: true,
     countryCode: 'FJI',
-    isPublication: true
+    isPublication: true,
+    url: 'https://www.computer.org/csdl/proceedings-article/csde/2023/10487682/1VTyZbxTpCM'
   },
   {
     title:
@@ -347,7 +350,8 @@ export const PROJECTS: Project[] = [
     technologies: 'Python, Pandas, scikit-learn, numpy, matplotlib',
     important: true,
     countryCode: 'CH',
-    isPublication: true
+    isPublication: true,
+    url: 'https://www.mdpi.com/2076-3417/14/10/4330'
   },
   {
     title: 'Blockchain Shares Tokenization dashboard',
