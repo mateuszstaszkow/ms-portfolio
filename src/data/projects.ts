@@ -367,7 +367,7 @@ export const PROJECTS: Project[] = [
     title: 'Website',
     place: 'GANC',
     teamCount: 2,
-    dates: '06/2024 - 07/2024',
+    dates: '06/2024 - 08/2024',
     technologies:
       'Java 17, Spring 5, H2, Docker, TypeScript 5.5, React 18, GitHub',
     countryCode: 'PL'
@@ -375,7 +375,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'Portfolio Website',
     place: 'Mateusz Staszkow Software Development',
-    dates: '07/2024',
+    dates: '07/2024 - 08/2024',
     technologies:
       'TypeScript 5.5, React 18, Next.js, Redux, Tailwind, Storybook, Jest, Playwright, Prettier, Husky, GitHub',
     countryCode: 'PL'
