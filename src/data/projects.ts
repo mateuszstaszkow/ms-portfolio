@@ -359,25 +359,65 @@ export const PROJECTS: Project[] = [
     teamCount: 15,
     dates: '12/2021 – 07/2024',
     technologies:
-      'TypeScript 4.5, Angular 13, Angular Material, Bootstrap, Tailwind, Highcharts, jspdf, prettier, web3.js, ethers.js, WalletConnect, Java, Spring, Microfrontends, Github, Jest',
+      'TypeScript 4.5, Angular 13, Angular Material, Bootstrap, Tailwind, Highcharts, jspdf, prettier, web3.js, ethers.js, WalletConnect, Java, Spring, Microfrontends, Github Pages, Jest',
     important: true,
     countryCode: 'CH'
   },
   {
-    title: 'Website',
+    title: 'Company website',
     place: 'GANC',
     teamCount: 2,
-    dates: '06/2024 - 08/2024',
+    dates: '06/2024 - 09/2024',
     technologies:
-      'Java 17, Spring 5, H2, Docker, TypeScript 5.5, React 18, GitHub',
+      'Java 17, Spring 5, H2, Docker, TypeScript 5.5, React 18, GitHub Pages',
     countryCode: 'PL'
   },
   {
     title: 'Portfolio Website',
     place: 'Mateusz Staszkow Software Development',
-    dates: '07/2024 - 08/2024',
+    dates: '07/2024 - 09/2024',
     technologies:
-      'TypeScript 5.5, React 18, Next.js, Redux, Tailwind, Storybook, Jest, Playwright, Prettier, Husky, GitHub',
+      'TypeScript 5.5, React 18, Next.js, Redux, Tailwind, Storybook, Jest, Playwright, Prettier, Husky, GitHub Pages',
     countryCode: 'PL'
+  },
+  {
+    title: 'Plot selling website',
+    place: 'Głodowo',
+    teamCount: 2,
+    dates: '08/2024 - 09/2024',
+    technologies: 'TypeScript 5.5, React 18, Tailwind, Jest, GitHub Pages',
+    countryCode: 'PL'
+  },
+  {
+    title: 'Corporate Clients enablement platform',
+    place: 'BNP Paribas',
+    teamCount: 2,
+    dates: '09/2024 - 02/2025',
+    technologies: 'TypeScript, Angular 17, Java 11, Spring, Oracle',
+    countryCode: 'FR'
+  },
+  {
+    title: 'Corporate Clients token management system',
+    place: 'BNP Paribas',
+    teamCount: 2,
+    dates: '02/2025',
+    technologies: 'TypeScript, Angular 19, Java 21, Spring, Oracle',
+    countryCode: 'FR'
+  },
+  {
+    title: 'E-learning platform',
+    place: 'Sanoma',
+    teamCount: 2,
+    dates: '03/2025',
+    technologies: 'TypeScript, Angular 19, AWS',
+    countryCode: 'FI'
+  },
+  {
+    title: 'Diversplainer - AI tool for accessibility',
+    place: 'HackDays4Learning 2025 - winner 2nd place',
+    teamCount: 2,
+    dates: '04/2025',
+    technologies: 'TypeScript, Angular 19, AWS Bedrock, Gemma 3, Claude 3.7',
+    countryCode: 'FI'
   }
 ];

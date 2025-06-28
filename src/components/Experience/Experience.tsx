@@ -1,14 +1,37 @@
 import React from 'react';
 import AnimatedSection from '@/components/shared/AnimatedSection/AnimatedSection';
-import Section from "@/components/shared/Section/Section";
+import Section from '@/components/shared/Section/Section';
 
 const Experience: React.FC = () => {
   return (
     <>
+      <Section id="sanoma">
+        <AnimatedSection
+          company="Sanoma"
+          companyUrl="https://www.sanomapro.fi/"
+          countryCode="FI"
+          description="Frontend development of the E-learning platform. Winner (2nd place) of the AI Hackathon."
+          imageUrl="sanoma.jpg"
+          role="Hackathon winner, frontend development"
+          technologies="Angular | AWS"
+        ></AnimatedSection>
+      </Section>
+      <Section id="bnpp">
+        <AnimatedSection
+          company="BNP Paribas"
+          companyUrl="https://cib.bnpparibas/centric/"
+          countryCode="FR"
+          description="Full stack development of the low-latency transactional systems for the corporate banking clients. Member of the best-performing team."
+          imageUrl="bnpp.jpg"
+          isLeft={true}
+          role="Best-performing team full stack development"
+          technologies="Angular | Spring | Oracle | Apigee"
+        ></AnimatedSection>
+      </Section>
       <Section id="aktionariat">
         <AnimatedSection
           company="Aktionariat"
-          companyUrl="https://www.aktionariat.com/our-products/corporate-dashboard#details"
+          companyUrl="https://www.aktionariat.com/solutions/corporate-dashboard"
           countryCode="CH"
           description="Solely design, build and deliver the whole project in the Crypto world for the renown startup in Zurich."
           imageUrl="aktionariat.webp"
@@ -97,7 +120,7 @@ const Experience: React.FC = () => {
           companyUrl="https://ilot.lukasiewicz.gov.pl/en/"
           countryCode="PL"
           description="Frontend development of the desktop app for the Aviation Lab in the Institute of Aviation in Warsaw."
-          imageUrl="ge.webp"
+          imageUrl="edc.jpg"
           imageWidth="lg:w-3/5"
           isLeft={true}
           role="Aviation Lab internship"
