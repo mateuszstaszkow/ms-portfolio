@@ -1,7 +1,7 @@
 import React from "react";
 import { Project } from "@/components/Projects/model/projects.interface";
 import Section from "@/components/shared/Section/Section";
-import styles from "@/app/projects/projects.module.css";
+import styles from "@/app/(main)/projects/projects.module.css";
 import ProjectTile from "@/components/Projects/ProjectTile/ProjectTile";
 
 interface ProjectGridProps {

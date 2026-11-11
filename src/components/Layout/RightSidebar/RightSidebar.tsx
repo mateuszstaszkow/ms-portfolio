@@ -1,8 +1,8 @@
 import React from 'react';
 import './RightSidebar.css';
 import Link from 'next/link';
-import ContactOptions from "@/components/shared/ContactOptions/ContactOptions";
-import { BASE_PATH } from "@/components/shared/utils/basePath";
+import ContactOptions from '@/components/shared/ContactOptions/ContactOptions';
+import { BASE_PATH } from '@/components/shared/utils/basePath';
 
 const RightSidebar: React.FC = () => {
   return (
@@ -11,7 +11,11 @@ const RightSidebar: React.FC = () => {
         <Link className="navigation-item" href="/">
           EXPERIENCE
         </Link>
-        <a href={`${BASE_PATH}/mateusz-staszkow-cv.pdf`} target="_blank" className="navigation-item">
+        <a
+          href={`${BASE_PATH}/mateusz-staszkow-cv.pdf`}
+          target="_blank"
+          className="navigation-item"
+        >
           RESUME
         </a>
         <Link className="navigation-item" href="/projects">
@@ -23,11 +27,22 @@ const RightSidebar: React.FC = () => {
         <Link className="navigation-item" href="/publications">
           PUBLICATIONS
         </Link>
-        <a href="https://justjoin.it/blog/kultura-pracy-w-szwajcarii-jest-zroznicowana/" target="_blank" className="navigation-item">
+        <a
+          href="https://justjoin.it/blog/kultura-pracy-w-szwajcarii-jest-zroznicowana/"
+          target="_blank"
+          className="navigation-item"
+        >
           INTERVIEWS
         </a>
-        <a href="https://www.youtube.com/watch?v=JiDVGROMxqQ" target="_blank" className="navigation-item">
+        <a
+          href="https://www.youtube.com/watch?v=JiDVGROMxqQ"
+          target="_blank"
+          className="navigation-item"
+        >
           MSD APARTMENTS
+        </a>
+        <a href={`${BASE_PATH}/v2/`} className="navigation-item">
+          V2 ✦ NEW
         </a>
         {/*TODO*/}
         {/*<div className="navigation-item">ABOUT</div>*/}
